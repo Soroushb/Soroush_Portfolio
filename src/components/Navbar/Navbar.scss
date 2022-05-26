@@ -6,7 +6,8 @@
     align-items: center;
 
     padding: 1rem 2rem;
-    background: rgba(255,255,255,0.25);
+    background: #66FCF1;
+    //background: rgba(255,255,255,0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255,255,255,0.18);
@@ -21,8 +22,8 @@
     align-items: center;
 
     img{
-        width:90px;
-        height: 20px;
+        width:80px;
+        height: 80px;
 
         @media screen and (min-width: 2000px) {
             width: 180px;
@@ -55,15 +56,17 @@
 
         a {
 
-            color: var(--gray-color);
+            color: #1F2833;
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 130%;
 
             transition: all 0.3s ease-in-out;
             &:hover{
                 color: var(--secondary-color)
+                //color: #1F2833;
             }
 
         }
@@ -71,6 +74,7 @@
        &:hover{
            div{
                background: var(--secondary-color);
+              //background: #1F2833;
            }
        }
     }
@@ -114,7 +118,8 @@
         align-items: flex-end;
         flex-direction: column;
         background: url('../../assets/bgWhite.png');
-        background-color: var(--white-color);
+       // background-color: var(--white-color);
+        background-color: #1F2833;
         background-size: cover;
         background-repeat: repeat;
 
@@ -123,8 +128,12 @@
         svg{
             width: 35px;
             height: 35px;
-            color: var(--secondary-color);
+           // color: var(--secondary-color);
+           color: #C5C6C7;
             margin: 0.5em 1em;
+            &:hover{
+                color: #66FCF1 ;
+            }
         }
 
         ul{
@@ -141,16 +150,19 @@
             li{
                 margin: 1 em;
                 a{
-                    color: var(--gray-color);
+                    //color: var(--gray-color);
+                    color: #C5C6C7;
                     text-decoration: none;
                     font-size: 1 em;
                     text-transform: uppercase;
-                    font-weight: 500;
+                    font-weight: 600;
+                    margin: 30;
 
                     transition: all 0.3s ease-in-out;
 
                     &:hover{
-                        color: var(--secondary-color);
+                        //color: var(--secondary-color);
+                        color: #66FCF1;
                     }
                 }
 
